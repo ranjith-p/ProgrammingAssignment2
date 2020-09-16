@@ -1,3 +1,7 @@
+## Put comments here that give an overall description of what your
+## functions do
+
+## The first function, makeCacheMatrix creates a special "matrix" to fill it later.
 
 makeCacheMatrix <- function(x = matrix()){
   i <- NULL
@@ -12,6 +16,7 @@ makeCacheMatrix <- function(x = matrix()){
        setinverse = setinverse,
        getinverse = getinverse)
 }
+##This function looks whether a calculation has already been made in the cache, if so, it retrieves it, if not, it calculates it.
 
 cacheSolve <- function(x, ...) {
   i <- x$getinverse()
